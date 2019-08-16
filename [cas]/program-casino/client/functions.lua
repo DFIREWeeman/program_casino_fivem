@@ -4,14 +4,14 @@
 function OpenCasinoCloak()
 	PlayerData = ESX.GetPlayerData()
 	local elements = {
-		{label = "Ubrania Robocze",  value = 'cloakroom'},
-		{label = "Ubrania Cywilne", value = "cloakroom2"}
+		{label = "Work clothes",  value = 'cloakroom'},
+		{label = "Civilian Clothes", value = "cloakroom2"}
 	}
 
 	ESX.UI.Menu.CloseAll()
 
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'CasinoCloak', {
-		title    = "Casino Przebieralnia",
+		title    = "Casino Changing room",
 		align    = 'top-left',
 		elements = elements
 	}, function(data, menu)
@@ -38,7 +38,7 @@ function OpenCasinoCloak()
 		menu.close()
 
 		CurrentAction     = 'CasinoCloak'
-		CurrentActionMsg  = "~r~[E]~p~ Przebieralnia Kasyna"
+		CurrentActionMsg  = "~r~[E]~p~ Changing room casinos"
 		CurrentActionData = {}
 	end)
 
